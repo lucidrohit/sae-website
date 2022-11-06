@@ -1,0 +1,8 @@
+.cards{
+    display: flex;
+    width: calc(80vw - 6rem)  !important;
+    overflow-x: scroll;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 4rem;
+}
