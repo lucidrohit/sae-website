@@ -1,0 +1,24 @@
+.userProfile {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+  &__logo {
+    border: 0.1rem solid var(--color-primary);
+    background-color: var(--color-secondary-bg);
+    padding: 0.1rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    background-color: black;
+  }
+  &__details {
+    &__heading{
+        font-size: 0.833rem;
+    }
+    &__name {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+  }
+}
