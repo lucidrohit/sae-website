@@ -1,0 +1,10 @@
+.team {
+  margin-top: 2rem;
+  width: calc(80vw - 6rem) !important;
+  overflow: hidden;
+  &__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
