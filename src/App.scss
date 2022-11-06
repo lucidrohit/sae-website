@@ -1,0 +1,14 @@
+.App {
+  background-color: var(--color-primary-bg);
+  font-size: 62.5%;
+  padding: unset 2rem !important;
+}
+
+.App::before {
+  content: "";
+  top: 0;
+  position: absolute;
+  height: 2rem;
+  width: 100%;
+  background-color: var(--color-secondary-bg);
+}
