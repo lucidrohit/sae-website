@@ -1,8 +1,8 @@
 import "./card.scss";
 import Button from "../button/button";
-import Competition from "../../../assets/competition.svg";
-import WShop from "../../../assets/wshop.svg";
-import info from "../../../assets/info.svg";
+import Competition from "../../../assets/card/competition.svg";
+import WShop from "../../../assets/card/wshop.svg";
+import info from "../../../assets/card/info.svg";
 
 function Card({ date, detail, price, img, name, eventType, month }) {
   const logo = eventType.toLowerCase() === "competition" ? Competition : WShop;

@@ -3,27 +3,26 @@ import SideBar from "../sideBar/sideBar";
 import { Outlet, useLocation } from "react-router-dom";
 import Carousel from "../common/carousel/carousel";
 import HeadingText from "../common/headingText/headingText";
+import slide1 from "../../assets/carousel/slide1.webp"
+import slide2 from "../../assets/carousel/slide2.webp"
+import slide3 from "../../assets/carousel/slide3.webp"
 
 const slides = [
   {
-    posterUrl: "https://picsum.photos/1170/325",
+    posterUrl: slide1,
   },
 
   {
-    posterUrl: "https://picsum.photos/1170/325",
+    posterUrl: slide2,
   },
 
   {
-    posterUrl: "https://picsum.photos/1170/325",
-  },
-
-  {
-    posterUrl: "https://picsum.photos/1170/325",
+    posterUrl: slide3,
   },
 ];
 
 export default function BoilerPlate() {
-  const allPath = ["", "about", "community", "events"];
+  const allPath = ["", "community", "events"];
   const location = useLocation();
   const path = location.pathname.slice(1, location.pathname.length);
   const isRightPath = allPath.includes(path);

@@ -2,7 +2,15 @@
   width: 100%;
   background-color: var(--color-secondary);
   border-radius: 1rem;
+  max-height: 21.5rem !important;
   overflow: hidden;
+
+  img{
+    object-fit: fill !important;
+    object-position: 25% 25% !important; 
+    object-position: 55%;
+
+  }
   .carousel-control-next,
   .carousel-control-prev {
     width: 4rem;

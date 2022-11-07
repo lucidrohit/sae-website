@@ -1,13 +1,15 @@
 import "./events.scss";
 import Cards from "../../components/cards/cards";
 import HeadingText from "../../components/common/headingText/headingText";
+import card1 from "../../assets/card/card1.webp"
+import card2 from "../../assets/carousel/slide2.webp"
 
 const cardsList = [
   {
     date: "11",
     month: "June",
     price: "5000",
-    img: "https://picsum.photos/334/133",
+    img: card1,
     name: "Name of Event",
     eventType: "Workshop",
     detail:
@@ -17,7 +19,7 @@ const cardsList = [
     date: "11",
     month: "June",
     price: "5000",
-    img: "https://picsum.photos/334/133",
+    img: card2,
     name: "Name of Event",
     eventType: "Competition",
     detail:

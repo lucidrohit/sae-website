@@ -1,9 +1,9 @@
 import "./navBar.scss";
-import home from "../../assets/home.svg"
-import event from "../../assets/event.svg"
+import home from "../../assets/navigation//home.svg"
+import event from "../../assets/navigation//event.svg"
 // import community from "../../assets/community.svg"
-import team from "../../assets/team.svg"
-import about from "../../assets/about.svg"
+import team from "../../assets/navigation/team.svg"
+import about from "../../assets/navigation//about.svg"
 import NavItem from "../common/navItem/navItem";
 
 const navBar = [

@@ -40,7 +40,9 @@
   }
   &__img {
     width: 100%;
+    max-height: 8.5rem;
     overflow: hidden;
+    object-fit: fill;
   }
   &__details {
     display: flex;
