@@ -48,3 +48,27 @@
     }
   }
 }
+
+.userInfoCard.fliped {
+  transform: translateY(180deg);
+}
+
+.userInfoCard,.userInfoCard:hover {
+  .userInfoCard__social {
+    display: flex;
+    flex-direction: column;
+    &__item {
+      margin-top: 1rem;
+      img{
+        width: 2.2rem;
+      }
+      a {
+        margin-left: 1rem;
+        font-size: 1rem;
+        color: var(--color-text-active) !important;
+        text-decoration: none;
+        font-weight: 500;
+      }
+    }
+  }
+}

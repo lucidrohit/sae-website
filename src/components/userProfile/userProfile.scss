@@ -16,28 +16,25 @@
     margin-left: 1.5rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    img{
+    img {
       margin: auto;
       width: 100%;
       height: 100%;
     }
   }
   &__details {
- 
     &__heading {
       font-size: 0.833rem;
       margin-left: 0.7rem;
       color: var(--color-primary);
-    margin-bottom: 0;
-
+      margin-bottom: 0;
     }
     &__name {
       font-size: 1rem;
       font-weight: 500;
       color: white;
       margin-left: 0.4rem;
-    margin-bottom: 0;
-
+      margin-bottom: 0;
     }
   }
 }

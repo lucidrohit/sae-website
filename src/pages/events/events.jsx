@@ -25,6 +25,17 @@ const cardsList = [
     detail:
       "The First competition organised by SAE india x NIT sri. Two finalists will receive cash prize+ one year membership of SAE worth rs 500...",
   },
+  {
+    date: "11",
+    month: "June",
+    price: "5000",
+    img: card2,
+    name: "Name of Event",
+    eventType: "Competition",
+    detail:
+      "The First competition organised by SAE india x NIT sri. Two finalists will receive cash prize+ one year membership of SAE worth rs 500...",
+  },
+
 ];
 
 function Events() {

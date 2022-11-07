@@ -1,12 +1,13 @@
 import Button from "../../components/common/button/button";
 import IconText from "../../components/common/iconText/iconText";
 import "./home.scss";
+import SaeLogo from "../../assets/sae.webp"
 
 function Home() {
   return (
     <div className="home">
       <div className="home__about__iconText">
-        <IconText text="About Us" logo={""} />
+        <IconText text="About Us" logo={SaeLogo} />
       </div>
       <div className="home__about__details">
         <div className="home__about__details__heading">
