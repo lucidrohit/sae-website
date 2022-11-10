@@ -12,7 +12,7 @@
   border-radius: 0.8rem;
   color: var(--color-text-active);
   &__header {
-    padding: 1rem;
+    padding: 0.7rem;
     display: flex;
     height: fit-content;
     align-items: center;
@@ -23,19 +23,26 @@
       flex: 1;
       margin-left: 1rem;
       &__name {
-        font-size: 0.9rem;
-        font-weight: 500;
+        font-size: 0.8rem;
+        font-weight: 700;
       }
       &__type {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
       }
       &__info {
         cursor: pointer;
+        width: 0.25rem;
+        margin-right: 0.5rem;
+        &::after{
+          width: 2rem;
+          padding: 2rem;
+          background-color: rgba(255, 0, 0, 0.235);
+        }
       }
     }
     &__logo {
-      width: 2.5rem;
-      height: 2.5rem;
+      width: 2.1rem;
+      height: 2.1rem;
     }
   }
   &__img {
@@ -43,6 +50,7 @@
     max-height: 8.5rem;
     overflow: hidden;
     object-fit: fill;
+    padding-right: 1rem;
   }
   &__details {
     display: flex;
@@ -72,11 +80,12 @@
       font-size: 0.7rem;
       &__price {
         align-self: flex-end;
+        font-weight: 700;
       }
       &__para {
-        padding-top: 1.2rem;
+        padding-top: 0.5rem;
         padding-left: 1rem;
-        font-size: 0.75rem;
+        font-size: 0.8rem;
         color: var(--color-text);
       }
     }
@@ -86,11 +95,14 @@
     align-items: center;
     padding: 1rem;
     padding-top: 0;
+    width: 100%;
+    justify-content: flex-end;
     button {
       margin: 0;
       font-size: 1.1rem;
       border-radius: 0.5rem;
       padding: 0.5rem 0.7rem;
+      width: 10rem;
     }
     &__details {
       display: flex;
@@ -99,6 +111,7 @@
       font-size: 0.65rem;
       justify-content: flex-end;
       margin-left: 2.5rem;
+      text-align: end;
     }
   }
 }
