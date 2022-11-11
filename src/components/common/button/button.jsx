@@ -1,7 +1,11 @@
 import "./button.scss";
 
-function Button({ text }) {
-  return <button className="button">{text}</button>;
+function Button({ text, ...rest }) {
+  return (
+    <button className="button" {...rest}>
+      {text}
+    </button>
+  );
 }
 
 export default Button;
