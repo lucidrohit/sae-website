@@ -1,10 +1,53 @@
 .team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-top: 2rem;
   width: calc(80vw - 6rem) !important;
   overflow: hidden;
-  &__cards {
+
+  &__faculty__cards,
+  &__team__cards {
+    align-items: center;
+    @media (max-width: 1380px){
+      justify-content: space-evenly;
+    }
+    @media (max-width: 1249px) {
+      flex-wrap: wrap;
+      .userInfoCard {
+        margin: 1rem;
+      }
+    }
+    @media (min-width: 1040px) and (max-width: 1249px)  {
+      .userInfoCard {
+        margin: 1rem auto;
+      }
+    }
+    @media (max-width: 1040px){
+      .userInfoCard {
+        width: 100%;
+      }
+    }
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+  }
+  &__team__cards {
     flex-wrap: wrap;
+    @media (max-width: 1500px){
+      justify-content: space-evenly;
+      .userInfoCard {
+          max-width: 20rem;
+          min-width: 17rem;
+          margin-right: 1rem;
+      }
+    }
+    @media (max-width: 1380px){
+      .userInfoCard {
+          max-width: 26rem;
+      }
+    }
+  }
+  &__web__cards{
+    display: flex;
   }
 }
