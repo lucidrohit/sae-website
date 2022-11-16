@@ -22,11 +22,11 @@
     .sideBar {
       display: none;
     }
-    .content{
+    .content {
       flex-basis: unset;
       flex-grow: 1;
       align-items: center;
-      .team{
+      .team {
         width: 90% !important;
       }
     }
@@ -42,17 +42,16 @@
       flex-direction: column;
 
       .home__about__iconText {
-        .heading{
+        .heading {
           font-size: 2rem;
           margin-bottom: 3rem;
         }
         .iconText__icon {
-          width: 10rem;
-          height: 10rem;
-
+          height: 6rem;
+          width: 6rem;
         }
       }
-      .home__about__details{
+      .home__about__details {
         margin-left: 0;
         align-items: center;
       }
