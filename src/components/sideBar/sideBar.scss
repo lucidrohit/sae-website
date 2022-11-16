@@ -3,13 +3,30 @@
   flex-direction: column;
   align-items: center;
   padding-top: 2.3rem;
-  position: fixed;
+  height: 100vh !important;
+  position: sticky !important;
+  top: 1rem !important;
 
   &__box {
     margin-bottom: 2.5rem;
     background-color: var(--color-secondary-bg);
     border-radius: 1rem;
     margin-right: 2rem;
-    width: 20vw  !important;
+    width: 20vw !important;
+  }
+}
+
+.sideBar.active{
+  z-index: 3;
+  display: block;
+  position: absolute !important;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--color-primary-bg);
+  top: 7rem !important;
+  .sideBar__box{
+    width: 70% !important;
+    margin-right: 0;
   }
 }
