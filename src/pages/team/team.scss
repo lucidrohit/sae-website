@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 2rem;
-  width: calc(80vw - 6rem) !important;
   overflow: hidden;
 
   &__faculty__cards,
@@ -49,5 +48,6 @@
   }
   &__web__cards{
     display: flex;
+    flex-wrap: wrap;
   }
 }
