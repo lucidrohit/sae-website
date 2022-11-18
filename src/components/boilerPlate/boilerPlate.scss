@@ -57,12 +57,18 @@
 }
 
 @media (max-width: 430px) {
+  html {
+    font-size: 80% !important;
+  }
   .boilerPlate {
     margin-left: 1rem;
     margin-right: 1rem;
     .content {
       width: 100% !important;
-      .team{
+      .home__about__details__heading{
+        font-size: 1.5rem;
+      }
+      .team {
         width: 100% !important;
       }
     }
@@ -73,5 +79,11 @@
   }
   label {
     left: 1rem !important;
+  }
+}
+
+@media (max-width: 950px) {
+  html{
+    font-size: 90%;
   }
 }
