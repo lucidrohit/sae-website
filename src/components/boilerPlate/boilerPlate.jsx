@@ -34,7 +34,7 @@ export default function BoilerPlate() {
   return (
     <div className={"boilerPlate"}>
       <Hamburger setClicked={setClicked} clicked={clicked} />
-      <SideBar isActive={clicked} />
+      <SideBar isActive={clicked} setIsActive={setClicked} />
       <div className="content">
         {isRightPath ? (
           <>
