@@ -54,7 +54,7 @@ function UserInfoCardBack({
           <img src={gmail} alt="" />
           <a
             href={`mailto:${gmailHandle}`}
-            className="userInfoCard__socail__item__text"
+            className="userInfoCard__social__item__text"
             target="_blank"
             rel="noreferrer"
           >
@@ -65,7 +65,7 @@ function UserInfoCardBack({
           <img src={instagram} alt="" />
           <a
             href={`https://instagram.com/${instagramHandle}`}
-            className="userInfoCard__socail__item__text"
+            className="userInfoCard__social__item__text"
             target="_blank"
             rel="noreferrer"
           >
@@ -76,7 +76,7 @@ function UserInfoCardBack({
           <img src={twitter} alt="" />
           <a
             href={`https://twitter.com/${twitterHandle}`}
-            className="userInfoCard__socail__item__text"
+            className="userInfoCard__social__item__text"
             target="_blank"
             rel="noreferrer"
           >
@@ -87,7 +87,7 @@ function UserInfoCardBack({
           <img src={linkedin} alt="" />
           <a
             href={`https://linkedin.com/in/${linkedinHandle}`}
-            className="userInfoCard__socail__item__text"
+            className="userInfoCard__social__item__text"
             target="_blank"
             rel="noreferrer"
           >
