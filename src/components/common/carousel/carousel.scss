@@ -5,11 +5,11 @@
   max-height: 21.5rem !important;
   overflow: hidden;
 
-  img{
+  img {
     object-fit: fill !important;
-    object-position: 25% 25% !important; 
+    object-position: 25% 25% !important;
     object-position: 55%;
-
+    aspect-ratio: 1280 /383;
   }
   .carousel-control-next,
   .carousel-control-prev {
