@@ -31,13 +31,11 @@ function Events() {
 
   const liveEvents = events.data.filter((event) => {
     const date = moment(event.dateTime);
-    const dateDiff = date.diff(moment(), "days");
-    return !dateDiff ;
+    return date.isAfter(moment())
   });
   const pastEvents = events.data.filter((event) => {
     const date = moment(event.dateTime);
-    const dateDiff = date.diff(moment(), "days");
-    return dateDiff ;
+    return date.isBefore(moment()) ;
   });
 
   return (

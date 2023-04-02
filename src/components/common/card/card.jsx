@@ -8,7 +8,6 @@ import moment from "moment";
 function Card({ dateTime, detail, price, img, name, eventType, link }) {
   const logo = eventType.toLowerCase() === "competition" ? Competition : WShop;
   const date = moment(dateTime);
-  const dateDiff = date.diff(moment(), "days");
 
   return (
     <div className="card">
@@ -35,14 +34,14 @@ function Card({ dateTime, detail, price, img, name, eventType, link }) {
       </div>
       <div className="card__reg">
         <Button
-          text={dateDiff >= 0 ? "Register Now" : "Closed"}
-          classes={dateDiff >= 0 ? null : "closed"}
-          onClick={() => (dateDiff >= 0 ? (window.location.href = link) : null)}
+          text={date.isAfter(moment())? "Register Now" : "Closed"}
+          classes={date.isAfter(moment()) ? null : "closed"}
+          onClick={() => (date.isAfter(moment()) ? (window.location.href = link) : null)}
         />
         <div className="card__reg__details">
-          <div className="card__reg__details__total">{dateDiff >= 0 ? "Registerations Open" : "Registerations Closed"}</div>
+          <div className="card__reg__details__total">{date.isAfter(moment())? "Registerations Open" : "Registerations Closed"}</div>
           <div className="card__reg__details__timeleft">
-            {dateDiff >= 0 ? `${dateDiff+1} days left` : `Event ended`}
+            {date.isAfter(moment())? `${date.diff(moment(),"days")+1} days left` : `Event ended`}
           </div>
         </div>
       </div>
