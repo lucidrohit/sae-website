@@ -95,6 +95,8 @@
         color: var(--color-text);
         text-overflow: clip;
         max-width: 130ch;
+        max-height: 100px;
+        overflow: scroll;
       }
     }
   }
